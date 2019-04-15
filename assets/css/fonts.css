@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'BPGNinoMtavruli';
+  src: url('../fonts/BPGNinoMtavruli.eot?#iefix') format('embedded-opentype'),  url('../fonts/BPGNinoMtavruli.woff') format('woff'),
+   url('../fonts/BPGNinoMtavruli.ttf')  format('truetype'), url('../fonts/BPGNinoMtavruli.svg#BPGNinoMtavruli') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DejaVu Sans';
+  src: url('../fonts/dejavu-sans-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/dejavu-sans-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/dejavu-sans-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/dejavu-sans-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/dejavu-sans-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/dejavu-sans-webfont.svg#dejavu_sansregular') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'DejaVu Sans Extra Light';
+  src: url('../fonts/dejavu-sans-extra-light-webfont.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/dejavu-sans-extra-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/dejavu-sans-extra-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/dejavu-sans-extra-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/dejavu-sans-extra-light-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/dejavu-sans-extra-light-webfont.svg#dejavu_sans_extra_lightregular') format('svg'); /* Legacy iOS */
+}
