@@ -4,7 +4,7 @@ nav ul li a, .geo, .img_menu h6, .graphs_filters, .project_block_p, table tr th,
 .user_input, footer .rights {
   font-family: 'DejaVu Sans';
 }
-tbody {
+tbody, .search, .filter-option  {
 font-family: 'DejaVu Sans Extra Light';
 }
 body {
@@ -60,7 +60,6 @@ header {
 /* start menu style */
 .main_nav {
 background-color: #42536d;
-height: 77px;
 }
 
  nav ul {
@@ -153,6 +152,12 @@ nav ul li a:hover {
 }
 /* end menu style */
 /* start image hover style */
+/* #main.main_container {
+  padding: 0;
+} */
+#main.container {
+  background-color: #fff;
+}
 .img_menu .child {
   display: none;
   position: absolute;
@@ -171,16 +176,13 @@ nav ul li a:hover {
   border-top: 1px solid #bfbfbf;
   margin-top: 100px;
 }
-
-.img_menu {
-  background-color: #fff;
-}
-
 .img_menu .space {
   padding-top: 70px;
 }
 .main_nav .header {
   padding: 0;
+  position: relative;
+height: 77px;
 }
 .parent_one {
   display: block;
@@ -399,6 +401,84 @@ nav ul li a:hover {
    transition: all 0.3s ease;
    opacity:1;
  }
+ #menu .dropdown_content .row {
+  align-items: flex-end;
+ }
+ #menu .dropdown_content .form-group {
+  font-family: 'DejaVu Sans Extra Light';
+  font-size: 14px;
+  margin-bottom: 40px !important; 
+ }
+ .form-group .form-control {
+  border-radius: 0 !important;
+ }
+ .form-group .form-control:focus {
+  border-color: #ced4da !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+.filter-option {
+  border: 1px solid #d5d6d6;
+}
+.bootstrap-select>.dropdown-toggle {
+  background-color: #fff;
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #6f819c;
+  font-family: 'DejaVu Sans Extra Light';
+}
+.btn-light.focus, .btn-light:focus {
+  box-shadow:0 !important;
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  color: #212529;
+  background-color: #ffffff; 
+   border-color: #ffffff; 
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show>.btn-light.dropdown-toggle {
+  color: #fff !important;
+}
+.filter-option:focus, .dropdown-item:focus {
+  outline: none !important;
+}
+.bootstrap-select .dropdown-toggle:focus {
+  outline: 0 !important;
+}
+.btn-light:hover {
+  color: none !important;
+}
+.input-group-append {
+  margin-left: 40px !important;
+}
+.input-group-text {
+  border-radius: 0 !important;
+  background-color: #acc770 !important;
+  border: 0 !important;
+  cursor: pointer;
+}
+.input-group-text i {
+  color: #fff;
+  padding: 0 30px !important;
+  
+}
+.input-group.search {
+  margin-top: 30px;
+}
+.input-group.search .form-control  {
+  border-radius: 0 !important;
+}
+.input-group.search .form-control:focus {
+  border-color: #a4c758 !important;
+  outline: 0;
+  box-shadow: none !important;
+}
+ #menu .dropdown_content  label {
+  color: #333 !important;
+  font-size: 16px;
+ }
+ 
  .dropdown_filters .show {
    top: 0;  
  }
@@ -431,7 +511,6 @@ nav ul li a:hover {
  /* end filters style */
 #project {
   padding-top: 130px;
-  background-color: #fff;
 }
 #project .project_block {
   height: 185px;
@@ -474,7 +553,6 @@ nav ul li a:hover {
   left: 30px;
 }
 #current_project   {
- background-color: #fff;
  padding-top: 100px;
  padding-bottom: 130px;
 }
@@ -518,7 +596,6 @@ footer {
   margin-right: 40px;
 }
 .social_list {
-background-color: #fff;
 padding-bottom: 40px;
 }
 .social_list ul {
@@ -570,7 +647,7 @@ padding-bottom: 40px;
 }
 .main_nav .toggle {
   position: absolute;
-  right: -17px;
+  right: 0;
   top: 50%;
   display: block;
   text-align: right;
@@ -634,14 +711,21 @@ padding-bottom: 40px;
   .menu_list li a{
     font-size: 32px;
   }
-  footer .footer_logo{
-    margin-right: 10px;
+  footer .footer_logo {
+    margin-right: 10px !important;
+  }
+  footer .rights {
+    font-size: 14px;
   }
   .table.table-striped {
     font-size: 10px;
   }
   }
-
+  @media (max-width: 359.98px) {
+.logo img {
+  width: 100%;
+}
+  }
 
   @media (min-width: 576px) {
     #project {
