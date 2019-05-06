@@ -810,10 +810,19 @@ padding-bottom: 15px;
   }
   }
  @media screen and (max-width: 767.98px) {
-    #SortTable {
-      overflow-x: scroll;
-        }
-      }
+  #SortTable {
+    overflow-x: scroll;
+  }
+  .item {
+    font-size: 10px;
+  }
+  #SortTable tr th {
+    font-size: 12px;
+  }
+  #SortTable th, #SortTable td {
+    padding: 5px;
+  }
+  }
 
   @media (max-width: 575.98px) {
    .user_input {
