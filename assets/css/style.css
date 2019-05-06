@@ -41,7 +41,7 @@ header {
 #SortTable tr th {
 font-size: 14px;
 font-weight: normal;
-background-image: url(/assets/images/table_arrows.png);
+background-image: url(/assets/images/arrows.png);
 background-repeat: no-repeat;
 background-position: right 35%;
 }
