@@ -48,7 +48,7 @@ background-position: right 35%;
 #SortTable tr th:first-child {
   background-image: none;
 }
-#SortTable th, td {
+#SortTable th, #SortTable td {
   border: 1px solid gray;
   padding: 10px;
   }
