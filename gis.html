@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/Favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>საგარეო დახმარების ინფორმაციული მართვის სისტემა</title>
+</head>
+
+<body>
+  <header class="container">
+    <div class="lang">
+      <span class="geo">ქარ</span>
+      <span class="eng">eng</span>
+    </div>
+    <div class="row">
+      <a class="col-12 col-lg-6 logo" href="index.html"><img src="assets/images/Logo.png"></a>
+      <div class="col-12 col-lg-6 input">
+        <form>
+          <div class="row">
+            <div class="col-12 col-sm-6 user_input">
+              <input type="text" name="username" value="" placeholder="მომხმარებელი">
+            </div>
+            <div class="col-12 col-sm-6 user_input">
+              <input type="password" name="password" value="" placeholder="პაროლი">
+              <div class="registration_block">
+                <a href="#" class="recover">პაროლის აღდგენა</a>
+                <a href="#" class="registration">რეგისტრაცია</a>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+  <nav class="main_nav">
+    <div class="container header">
+      <ul class="menu_list">
+        <li><a href="index.html">ჩვენ შესახებ</a></li>
+        <li><a href="#">განვითარების პარტნიორები</a></li>
+        <li><a href="#">პროექტები</a></li>
+        <li><a href="#">ინფო გრაფიკები</a></li>
+        <li class="active_tab"><a href="gis.html">GIS რუკა</a></li>
+        <li><a href="#">ღონისძიებები</a></li>
+        <li><a href="news.html">სიახლეები</a></li>
+        <li><a href="#">დაგვიკავშირდით</a></li>
+      </ul>
+      <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+  <main id="main" class="container">
+    <section id="main_content">
+      <div class="row">
+        <div class="col-12 graphs_filters">ინფოგრაფიკების ფილტრები
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 dropdown_filters">
+          <nav id="menu" class="show hide">
+            <div class="dropdown_content">
+              <form>
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="პროექტები">
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <select name="project" class="form-control selectpicker" id="FormControlSelect2">
+                        <option value="">პროექტის სტატუსი</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <select name="strategy" class="form-control selectpicker" id="FormControlSelect3">
+                        <option value="">სახელმწიფო სტრატეგია</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <select name="project_type" class="form-control selectpicker" id="FormControlSelect4">
+                        <option value="">პროექტის ტიპი</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <select name="finance" class="form-control selectpicker" id="FormControlSelect5">
+                        <option value="">დაფინანსების წყარო</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <select name="finance_agenncy" class="form-control selectpicker" id="FormControlSelect6">
+                        <option value="">დამფინანსებელი სააგენტო</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <select name="finance_type" class="form-control selectpicker" id="FormControlSelect7">
+                        <option value="">დაფინანსების ტიპი</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <select name="indicator" class="form-control selectpicker" id="FormControlSelect8">
+                        <option value="">SDG ინდიკატორები და მიზნები</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <select name="OECD_Sector" class="form-control selectpicker" id="FormControlSelect9">
+                        <option value="">OECD სექტორი</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <label for="FormControlSelect10">გეოგრაფიული მდებარეობა</label>
+                      <select name="region" class="form-control selectpicker" id="FormControlSelect10">
+                        <option value="">რეგიონი, ავტონპმიური რესპუბლიკა</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <label for="FormControlSelect11">გეოგრაფიული მდებარეობა</label>
+                      <select name="municipality" class="form-control selectpicker" id="FormControlSelect11">
+                        <option value="">მუნიციპალიტეტი/ქალაქი</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="form-group">
+                      <select name="currency" class="form-control selectpicker" id="FormControlSelect12">
+                        <option value="">ვალუტა</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-9 col-lg-6  input-group search">
+                    <input class="form-control selectpicker" type="text" placeholder="ძიება">
+                    <div class="input-group-append">
+                      <span class="input-group-text" id="#"><i class="fas fa-search" aria-hidden="true"></i></span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </nav>
+          <div id="showmenu">
+            <img class="left_arrow" src="assets/images/down_arrow.png">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="map_img">
+      <img src="assets/images/map.png">
+    </section>
+    <section class="container">
+      <table id="SortTable" class="row">
+        <tr>
+          <th onclick="w3.sortHTML('#SortTable', '.item', 'td:nth-child(1)')" style="cursor:pointer">#</th>
+          <th onclick="w3.sortHTML('#SortTable', '.item', 'td:nth-child(2)')" style="cursor:pointer">პროექტი</i></th>
+          <th onclick="w3.sortHTML('#SortTable', '.item', 'td:nth-child(3)')" style="cursor:pointer">სექტორი</th>
+          <th class="expenses" onclick="w3.sortHTML('#SortTable', '.item', 'td:nth-child(4)')" style="cursor:pointer">
+            სულ წლიური
+            ხარჯები/ტრანშები</th>
+          <th class="budget" onclick="w3.sortHTML('#SortTable', '.item', 'td:nth-child(5)')" style="cursor:pointer">სულ
+            პროექტის
+            ბიუჯეტი
+          </th>
+          <th class="year" onclick="w3.sortHTML('#SortTable', '.item', 'td:nth-child(6)')" style="cursor:pointer">
+            წლიდან</th>
+          <th class="year" onclick="w3.sortHTML('#SortTable', '.item', 'td:nth-child(7)')" style="cursor:pointer">
+            წლამდე</th>
+        </tr>
+        <tr class="item">
+          <td>1</td>
+          <td>ლიდერობისა და მართვის უნარ-ჩვევების განვითარების პროგრამა </td>
+          <td>ადამიანური კაპიტალის განვითარება</td>
+          <td>550,000,00</td>
+          <td>550,000,00</td>
+          <td>2015</td>
+          <td>2019</td>
+        </tr>
+        <tr class="item">
+          <td>2</td>
+          <td>ინგლისური ენის სწავლების პროგრამა</td>
+          <td>ადამიანური კაპიტალის განვითარება</td>
+          <td>1,525,723</td>
+          <td>209,500,00</td>
+          <td>2019</td>
+          <td>2020</td>
+        </tr>
+        <tr class="item">
+          <td>3</td>
+          <td>ადიქტოლოგიის დანერგვა საქართველოს საგანმანათლებლო სისტემაში</td>
+          <td>კაპიტალის განვითარება</td>
+          <td>209,500,00</td>
+          <td>209,500,00</td>
+          <td>2018</td>
+          <td>2019</td>
+        </tr>
+        <tr class="item">
+          <td>4</td>
+          <td>ინგლისური ენის სწავლების პროგრამა</td>
+          <td>ადამიანური კაპიტალი</td>
+          <td>1,525,723</td>
+          <td>1,525,723</td>
+          <td>2016</td>
+          <td>2017</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <section class="container social_list">
+      <ul>
+        <li><a href="#">Share on<i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#">Share on<i class="fab fa-twitter"></i></a></li>
+        <li><a href="#">Share on<i class="fab fa-linkedin-in"></i></a></li>
+      </ul>
+    </section>
+    <div class="container-fluid footer">
+      <div class="container">
+        <div class="row">
+          <p class="rights">© 2019 · ყველა უფლება დაცულია</p>
+          <a href="#" class="footer_logo"><img src="assets/images/footer_logo2.png"> </a>
+          <a href="#" class="fas_logo"><img src="assets/images/footer_logo.png"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
