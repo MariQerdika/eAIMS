@@ -658,7 +658,7 @@ padding: 40px 0 40px 15px;
   padding-left: 8px;
 }
 .social_list li {
-  margin-right: 15px;
+  margin-right: 13px;
   height: 28px;
 }
 .social_list li:first-child {
@@ -808,8 +808,9 @@ padding-bottom: 15px;
   .news_block img {
     margin-bottom: 20px;
   }
+ 
   }
- @media screen and (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
   #SortTable {
     overflow-x: scroll;
   }
@@ -841,7 +842,7 @@ padding-bottom: 15px;
     margin-right: 10px !important;
   }
   footer .rights {
-    font-size: 14px;
+    font-size: 12px;
   }
   .table.table-striped {
     font-size: 10px;
