@@ -809,7 +809,11 @@ padding-bottom: 15px;
     margin-bottom: 20px;
   }
   }
-
+ @media screen and (max-width: 767.98px) {
+    #SortTable {
+      overflow-x: scroll;
+        }
+      }
 
   @media (max-width: 575.98px) {
    .user_input {
