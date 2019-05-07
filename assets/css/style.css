@@ -38,18 +38,21 @@ header {
  #SortTable .year {
   width: 100px;
  }
-#SortTable tr th {
+ #SortTable tr th {
 font-size: 14px;
 font-weight: normal;
-background-image: url(/assets/images/arrows.png);
-background-repeat: no-repeat;
-background-position: right 35%;
 }
-#SortTable tr th:first-child {
-  background-image: none;
-}
+#SortTable tr th p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+  align-items: center;
+  }
+  #SortTable tr th p i {
+    color: #b9bcbc;
+    }
 #SortTable th, #SortTable td {
-  border: 1px solid gray;
+  border: 1px solid #a7a7a7;
   padding: 10px;
   }
 .eng {
