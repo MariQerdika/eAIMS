@@ -6,7 +6,9 @@ nav ul li a, .geo, .img_menu h6, .graphs_filters, .project_block_p, table tr th,
 .rights, .region_name, .region_title   {
   font-family: 'BPGNinoMtavruli';
 }
+
 body, .user_input, footer, .news_text, #SortTable tbody, .filter-option-inner-inner, label, .form-control {
+
   font-family: 'DejaVu Sans';
 }
 tbody, .search, .filter-option  {
@@ -750,6 +752,7 @@ margin-bottom: 0;
   display: inline-block;
   margin-bottom: 30px;
 }
+<<<<<<< HEAD
 #SortTable tbody td, ol li, .projects_num, .budget_sum, .info_ul li {
   color: #818181;
 }
@@ -769,6 +772,16 @@ ol {
 .Infographics {
   padding: 50px 0;
 }
+=======
+#SortTable tbody td, ol li, .projects_num, .budget_sum {
+  color: #818181;
+}
+
+
+
+
+
+>>>>>>> 57d8206160a8827c6142d04d89102ba58ca21d45
 
 
 
@@ -852,12 +865,18 @@ ol {
   .region_title {
     margin-top: 20px;
 }
+<<<<<<< HEAD
 .region_title {
   font-size: 20px;
 }
   }
 
 
+=======
+  }
+
+  
+>>>>>>> 57d8206160a8827c6142d04d89102ba58ca21d45
 @media screen and (max-width: 767.98px) {
   #SortTable {
     overflow-x: scroll;
@@ -895,8 +914,14 @@ ol {
   .table.table-striped {
     font-size: 10px;
   }
+<<<<<<< HEAD
   .footer .rights {
     font-size: 12px;
+=======
+	  .footer .rights {
+    font-size: 12px;
+  }
+>>>>>>> 57d8206160a8827c6142d04d89102ba58ca21d45
   }
 }
   @media (max-width: 359.98px) {
