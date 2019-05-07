@@ -881,6 +881,9 @@ margin-bottom: 0;
   .table.table-striped {
     font-size: 10px;
   }
+	  .footer .rights {
+    font-size: 12px;
+  }
   }
   @media (max-width: 359.98px) {
 .logo img {
