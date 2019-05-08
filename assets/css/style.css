@@ -559,7 +559,7 @@ height: 77px;
  }
  /* end filters style */
 #project {
-  padding-top: 130px;
+  padding: 130px 0 80px;
 }
 #project .project_block {
   height: 185px;
@@ -602,7 +602,7 @@ height: 77px;
   left: 30px;
 }
 #current_project   {
- padding-top: 100px;
+ padding-top: 80px;
  padding-bottom: 130px;
 }
 #current_project h3  {
@@ -780,9 +780,6 @@ cursor: pointer;
 .download_files .excel_file {
   cursor: pointer;
   }
-
-
-
 
 
 
