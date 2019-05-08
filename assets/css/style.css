@@ -769,6 +769,17 @@ ol {
 .Infographics {
   padding: 50px 0;
 }
+.download_files {
+  display: flex;
+  margin-top: 20px;
+}
+.download_files .pdf_file {
+margin-right: 25px;
+cursor: pointer;
+}
+.download_files .excel_file {
+  cursor: pointer;
+  }
 
 
 
