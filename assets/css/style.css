@@ -780,17 +780,25 @@ cursor: pointer;
 .download_files .excel_file {
   cursor: pointer;
   }
+
+
+
 /* partners page */
 .partner_block {
   border: 1px solid #cdcdcd;
   display: block;
-  padding: 15px 0;
+  padding-top: 15px;
+  margin-bottom: 8px;
+  min-height: 220px;
 }
 .partner {
-  padding-top: 50px;
+  padding: 50px 11px;
+}
+ .partner .padding {
+  padding: 0 4px !important;
 }
 .partner .min_height {
-  min-height: 135px;
+  min-height: 160px;
 }
 .partner_block:hover {
   border: 1px solid #42536d;
@@ -802,11 +810,59 @@ cursor: pointer;
 .partner_block h6 {
   color: #6d6a6a;
   margin-bottom: 0;
+  min-height: 30px;
 }
 
 
 
-
+/* modal */
+.partner .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4)
+}
+.partner .modal-content {
+  background-color: #f4f4f4;
+  margin: 15% auto;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+}
+@keyframes modalopen {
+  from{ opacity: 0}
+  to {opacity: 1}
+}
+.partner .closeBtn {
+position: absolute;
+top: 0;
+right: 0;
+  font-size: 30px;
+  color: rgb(58, 57, 57);
+  cursor: pointer;
+}
+.partner .closeBtn:hover,.closeBtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor:pointer;
+}
+.partner .modal-header {
+  padding: 15px;
+}
+/* .partner .modal-header h2, .modal-footer h3 {
+  margin: 0;
+} */
+.partner .modal-body {
+  padding: 10px 20px;
+}
+/* modal end */
 
 
 
@@ -897,6 +953,7 @@ cursor: pointer;
   #SortTable th, #SortTable td {
     padding: 5px;
   }
+  
   }
 
   @media (max-width: 575.98px) {
