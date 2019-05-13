@@ -3,7 +3,7 @@
   padding: 0;
 }
 nav ul li a, .geo, .img_menu h6, .graphs_filters, .project_block_p, table tr th, #current_project h3, .see_all, .news_header,
-.rights, .region_name, .region_title   {
+.rights, .region_name, .region_title, .partner_block h6   {
   font-family: 'BPGNinoMtavruli';
 }
 body, .user_input, footer, .news_text, #SortTable tbody, .filter-option-inner-inner, label, .form-control {
@@ -780,11 +780,29 @@ cursor: pointer;
 .download_files .excel_file {
   cursor: pointer;
   }
-
-
-
-
-
+/* partners page */
+.partner_block {
+  border: 1px solid #cdcdcd;
+  display: block;
+  padding: 15px 0;
+}
+.partner {
+  padding-top: 50px;
+}
+.partner .min_height {
+  min-height: 135px;
+}
+.partner_block:hover {
+  border: 1px solid #42536d;
+  text-decoration: none;
+}
+.partner_block:hover h6 {
+  color: #2e3a4d;
+}
+.partner_block h6 {
+  color: #6d6a6a;
+  margin-bottom: 0;
+}
 
 
 
