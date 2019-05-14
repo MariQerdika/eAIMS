@@ -700,6 +700,14 @@ padding: 40px 0 40px 15px;
   text-decoration: none;
   color: #6d6a6a;
 }
+ .news_block:hover .news_header {
+color:#42536d;
+font-weight: bold;
+}
+.news_inner .news_header {
+  color:#42536d;
+  font-weight: bold;
+}
 .news_header {
 font-size: 16px;
 margin-bottom: 0;
