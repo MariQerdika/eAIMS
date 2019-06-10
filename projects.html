@@ -44,9 +44,9 @@
   <nav class="main_nav">
     <div class="container header">
       <ul class="menu_list">
-        <li class="active_tab"><a href="about.html">ჩვენ შესახებ</a></li>
+        <li><a href="about.html">ჩვენ შესახებ</a></li>
         <li><a href="Partners_page.html">განვითარების პარტნიორები</a></li>
-        <li><a href="projects.html">პროექტები</a></li>
+        <li class="active_tab"><a href="projects.html">პროექტები</a></li>
         <li><a href="info_graphs.html">ინფო გრაფიკები</a></li>
         <li><a href="gis.html">GIS რუკა</a></li>
         <li><a href="#">ღონისძიებები</a></li>
@@ -62,19 +62,87 @@
     </div>
   </nav>
   <main id="main" class="container">
-    <div class="a_content">
-      <p>eAIMS (e-Aid Information Management System) არის საგარეო დახმარების შესახებ ინფორმაციის შეგროვების, ანალიზისა
-        და ანგარიშგების ინსტრუმენტი, რომლის მიზანია საქართველოსთვის განკუთვნილი საგარეო დახმარების ნაკადების
-        გამჭვირვალობის, ანგარიშვალდებულებისა და ეფექტურობის გაუმჯობესება.</p>
-      <p>eAIMS ხელმისაწვდომია ყველა დაინტერესებული პირისთვის. ის შესაძლებლობას აძლევს მომხმარებელს მოიპოვოს ინფორმაცია
-        ყველა დონორის, დაფინანსების ტიპის, პროექტის და თემატური მიმართულების შესახებ.</p>
-      <p>eAIMS ითვალისწინებს OECD-ის (Organization for Economic Co-operation and Development) ეფექტური დახმარების
-        პრინციპებს, რომელიც მიზნად ისახავს საგარეო დახმარების ეფექტურობის ზრდას პარიზის დეკლარაციით აღებული
-        ვალდებულებების შესაბამისად.</p>
-      <p>eAIMS მონაცემთა ბაზა შეიქმნა საქართველოს ფინანსთა სამინისტროს, ევროპულ და ევროატლანტიკურ სტრუქტურებში
-        ინტეგრაციის საკითხებში საქართველოს სახელმწიფო მინისტრის აპარატისა და საქართველოს მთავრობის ადმინისტრაციის
-        ერთობლივი მუშაობის შედეგად.</p>
-    </div>
+    <section id="left_content" class="container-fluid">
+      <section id="menul" class="leftl showl">
+        <a href="#" id="showmenul">
+          <img class="left_arrow" src="assets/images/arrow_left.png">
+        </a>
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+                  პროექტები
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <li><a href="#">ახლის დამატება</a></li>
+                <li><a href="#">რედაქტირება</a></li>
+                <li><a href="#">წაშლა</a></li>
+                <li><a href="#">დათვალიერება</a></li>
+                <li><a href="#">პროექტის დეტალები</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  სიახლეები
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <li><a href="#">ახლის დამატება</a></li>
+                <li><a href="#">რედაქტირება</a></li>
+                <li><a href="#">წაშლა</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  პუბლიკაციები
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <li><a href="#">ახლის დამატება</a></li>
+                <li><a href="#">რედაქტირება</a></li>
+                <li><a href="#">წაშლა</a></li>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingFour">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  მიმღების შენიშვნები
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <li><a href="#">ახლის დამატება</a></li>
+                <li><a href="#">რედაქტირება</a></li>
+                <li><a href="#">წაშლა</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    </section>
   </main>
   <footer>
     <section class="container social_list">
@@ -106,7 +174,6 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
   <script type="text/javascript" src="assets/js/main.js"></script>
-
 </body>
 
 </html>
