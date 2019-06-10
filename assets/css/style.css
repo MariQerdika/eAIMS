@@ -3,11 +3,7 @@
   padding: 0;
 }
 nav ul li a, .geo, .img_menu h6, .graphs_filters, .project_block_p, table tr th, #current_project h3, .see_all, .news_header,
-<<<<<<< HEAD
 .rights, .region_name, .region_title, .partner_block h6, .mb-0  {
-=======
-.rights, .region_name, .region_title, .partner_block h6  {
->>>>>>> fa12628c2d858f5153cbdf6d05864288e737117c
   font-family: 'BPGNinoMtavruli';
 }
 body, .user_input, footer, .news_text, #SortTable tbody, .filter-option-inner-inner, label, .form-control {
@@ -828,7 +824,6 @@ cursor: pointer;
   margin-bottom: 0;
   min-height: 30px;
 }
-<<<<<<< HEAD
 
 
 
@@ -1046,82 +1041,11 @@ font-size: 12px;
 
 
 
-=======
->>>>>>> fa12628c2d858f5153cbdf6d05864288e737117c
 
 
 
-/* modal */
-.partner .modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.64)
-}
-.partner .modal-header {
-  border: none;
-}
-.partner .modal-content {
-  margin: 6% auto;
-  padding: 50px 20px 20px 20px;
-  width: 60%;
-  box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
-  animation-name: modalopen;
-  animation-duration: 1s;
-  border: none;
-  border-radius: 0;
-}
-@keyframes modalopen {
-  from{ opacity: 0}
-  to {opacity: 1}
-}
-.partner .closeBtn {
-position: absolute;
-top: 10px;
-right: 8px;
-  font-size: 20px;
-  color: rgb(0, 0, 0, 0.64);
-  cursor: pointer;
-}
-.partner .closeBtn:hover,.closeBtn:focus {
-  color: #000;
-  text-decoration: none;
-  cursor:pointer;
-}
-.partner .modal-header {
-  padding: 0;
-}
-.partner .modal-body {
-  padding: 0;
-}
-.partner .modal-body img {
-  margin-bottom: 50px;
-}
-.partner .modal-body  {
-font-size: 12px;
-}
-.partner .modal-body  h6 {
-  margin-bottom: 30px;
-}
-.partner .modal-body ul {
-  margin-left: 25px;
-}
-.modal-body h6  {
-  text-transform: uppercase;
-}
-/* modal end */
 
 
-@media screen and (max-width: 1366.98px) {
-  .partner .modal-content {
-    width: 83%;
-  }
-}
 
 @media screen and (max-width: 1366.98px) {
   .partner .modal-content {
