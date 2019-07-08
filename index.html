@@ -283,6 +283,10 @@
         </div>
       </div>
     </section>
+    <section id="chart_m" class="row">
+      <div id="chart_first" class="col-6" style="height: 400px"></div>
+      <div id="chart_second" class="col-6" style="height: 400px"></div>
+    </section>
     <section id="map">
       <div style="width: 100%"><iframe width="100%" height="600"
           src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Georgia+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=7&amp;iwloc=B&amp;output=embed"
@@ -392,8 +396,105 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+  <script src="assets/js/highcharts.js"></script>
+  <script src="assets/js/highcharts-3d.js"></script>
+  <script src="../../code/modules/exporting.js"></script>
+  <script src="../../code/modules/export-data.js"></script>
   <script type="text/javascript" src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    Highcharts.chart('chart_first', {
+      chart: {
+        type: 'pie',
+        options3d: {
+          enabled: true,
+          alpha: 45,
+          beta: 0
+        }
+      },
+      title: {
+        text: 'დონორები'
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          depth: 35,
+          dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+          }
+        }
+      },
+      series: [{
+        type: 'pie',
+        name: 'Browser share',
+        data: [
+          ['Firefox', 45.0],
+          ['IE', 26.8],
+          {
+            name: 'Chrome',
+            y: 12.8,
+            sliced: true,
+            selected: true
+          },
+          ['Safari', 8.5],
+          ['Opera', 6.2],
+          ['Others', 0.7]
+        ]
+      }]
+    });
+    Highcharts.chart('chart_second', {
+      chart: {
+        type: 'pie',
+        options3d: {
+          enabled: true,
+          alpha: 45,
+          beta: 0
+        }
+      },
+      title: {
+        text: 'დაფინანსების მიზნობრიობა'
+      },
+      tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+      },
+      plotOptions: {
+        pie: {
+          allowPointSelect: true,
+          cursor: 'pointer',
+          depth: 35,
+          dataLabels: {
+            enabled: true,
+            format: '{point.name}'
+          }
+        }
+      },
+      series: [{
+        type: 'pie',
+        name: 'Browser share',
+        data: [
+          ['Firefox', 45.0],
+          ['IE', 26.8],
+          {
+            name: 'Chrome',
+            y: 12.8,
+            sliced: true,
+            selected: true
+          },
+          ['Safari', 8.5],
+          ['Opera', 6.2],
+          ['Others', 0.7]
+        ]
+      }]
+    });
 
+
+
+
+  </script>
 </body>
 
 </html>
