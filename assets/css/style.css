@@ -3,7 +3,7 @@
   padding: 0;
 }
 nav ul li a, .geo, .img_menu h6, .graphs_filters, .project_block_p, table tr th, #current_project h3, .see_all, .news_header,
-.rights, .region_name, .region_title, .partner_block h6, .mb-0  {
+.rights, .region_name, .region_title, .partner_block h6, .mb-0,  tspan   {
   font-family: 'BPGNinoMtavruli';
 }
 body, .user_input, footer, .news_text, #SortTable tbody, .filter-option-inner-inner, label, .form-control {
